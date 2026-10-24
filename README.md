@@ -1,20 +1,13 @@
-<<<<<<< HEAD
-# React + Vite
+# APPDEV1 Final Practical Exam
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Project Overview
+This project is a Sign Up and Login page created using React.js and Vite. It includes a blossom flower image, Google and Apple sign-in buttons, and input fields using shadcn/ui.
 
-Currently, two official plugins are available:
+## What I Learned
+While doing this practical exam, I mostly used AI to help me write code and fix errors. I learned how to use AI as a guide when working in VS Code. I also learned how to save SVG files from Figma and use them in my VS Code project. This helped me understand how to use design assets in a React project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Challenges Encountered
+One of my challenges was setting up the project and fixing errors in the code. I needed help from AI, especially when configuring shadcn/ui.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-=======
-# appdev1-final-practical-exam
->>>>>>> 98909647454b964b96c8b661889e14f8f95b86bf
+## Reflection
+This practical exam helped me learn more about React.js, Figma, VS Code, and GitHub. I still depend on AI a lot when coding, but I also learned new things along the way, such as exporting SVG files from Figma and adding them to my project. I know I still need more practice, but this activity helped me understand the process of creating a web interface better.
