@@ -1,0 +1,29 @@
+
+:root {
+  font-family: Arial, sans-serif;
+
+  /* Colors */
+  --color-text: #000000;
+  --color-muted: #666666;
+  --color-background: #ffffff;
+  --color-border: #d9d9d9;
+  --color-primary: #000000;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  /* Typography */
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-title: 32px;
+}

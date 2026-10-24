@@ -2,168 +2,200 @@
 .page {
   display: flex;
   width: 100%;
+  max-width: var(--page-max-width);
   min-height: 100vh;
-  background-color: #ffffff;
+  margin: 0 auto;
+  background: var(--color-background);
+  color: var(--color-text);
   font-family: Arial, sans-serif;
 }
 
 .leftSection {
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  align-items: center;
-  padding: 55px 40px;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  min-width: 0;
 }
 
 .title {
-  width: 100%;
-  max-width: 420px;
-  margin: 0 0 28px;
-  color: #000000;
-  font-size: 32px;
-  font-weight: 600;
-  text-align: left;
+  margin: 0 0 var(--spacing-lg);
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-muted);
+  font-size: var(--font-size-md);
+  text-align: center;
 }
 
 .form {
-  width: 100%;
-  max-width: 420px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-md);
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .inputGroup {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-sm);
+  width: 100%;
 }
 
 .inputGroup label {
-  color: #111111;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--font-size-md);
+  font-weight: 600;
 }
 
 .inputGroup input {
-  width: 100%;
   box-sizing: border-box;
-  height: 46px;
-  padding: 0 14px;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  font-size: 14px;
-  outline: none;
+  width: 100%;
+  min-height: 44px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
 }
 
 .inputGroup input:focus {
-  border-color: #555555;
+  outline: 2px solid var(--color-muted);
+  outline-offset: 1px;
 }
 
-.inputGroup input::placeholder {
-  color: #999999;
+.passwordLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.passwordLabel a {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
 }
 
 .checkboxGroup {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #333333;
-  font-size: 13px;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-md);
 }
 
 .checkboxGroup input {
   width: 16px;
   height: 16px;
   margin: 0;
+  accent-color: var(--color-primary);
 }
 
 .signupButton {
+  display: block;
   width: 100%;
-  height: 46px;
+  min-height: 44px;
+  padding: 12px;
   border: none;
-  border-radius: 8px;
-  background-color: #111111;
+  border-radius: var(--radius-sm);
+  background-color: #000000;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
+  text-align: center;
   cursor: pointer;
 }
 
 .signupButton:hover {
-  background-color: #333333;
+  opacity: 0.85;
 }
 
 .divider {
-  width: 100%;
-  max-width: 420px;
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin: 22px 0;
+  gap: var(--spacing-md);
+  width: 100%;
+  max-width: 420px;
+  margin: var(--spacing-lg) auto;
 }
 
 .divider span {
   flex: 1;
   height: 1px;
-  background-color: #dddddd;
+  background: var(--color-border);
 }
 
 .divider p {
   margin: 0;
-  color: #777777;
-  font-size: 13px;
+  color: var(--color-muted);
+  font-size: var(--font-size-md);
 }
 
 .socialButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
   width: 100%;
   max-width: 420px;
-  display: flex;
-  gap: 14px;
+  margin: 0 auto;
+
 }
 
 .socialButton {
-  flex: 1;
-  min-width: 0;
-  height: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 0 10px;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  background-color: #ffffff;
-  color: #111111;
-  font-size: 12px;
+  gap: var(--spacing-sm);
+  width: 100%;
+  min-height: 44px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
   cursor: pointer;
 }
 
 .socialButton img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
 .accountText {
-  margin: 24px 0 0;
-  color: #555555;
-  font-size: 13px;
+  display: block;
+  width: 100%;
+  margin: 24px auto 0;
   text-align: center;
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  position: relative;
+  z-index: 1;
 }
 
 .accountText a {
-  color: #111111;
+  color: var(--color-text);
   font-weight: 600;
   text-decoration: none;
 }
 
 .rightSection {
-  flex: 1;
   display: flex;
-  justify-content: center;
+  flex: 1;
   align-items: center;
-  padding: 40px;
+  justify-content: center;
+  min-width: 0;
+  padding: var(--spacing-lg);
+  overflow: hidden;
 }
 
 .blossomImage {
@@ -176,41 +208,23 @@
 
 @media (max-width: 768px) {
   .page {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .leftSection {
+    padding: var(--spacing-lg);
   }
 
   .rightSection {
-    padding: 24px;
+    min-height: 250px;
+    padding: var(--spacing-md);
   }
 
   .blossomImage {
     max-width: 300px;
   }
 
-  .leftSection {
-    padding: 32px 24px;
+  .title {
+    font-size: var(--font-size-xl);
   }
-
-  .socialButtons {
-    flex-direction: column;
-  }
-}
-.subtitle {
-  margin-top: 8px;
-  margin-bottom: 24px;
-  color: #666;
-  font-size: 14px;
-  text-align: center;
-}
-.passwordLabel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.passwordLabel a {
-  color: #000;
-  font-size: 12px;
-  text-decoration: none;
 }

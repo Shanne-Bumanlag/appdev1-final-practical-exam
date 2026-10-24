@@ -41,11 +41,11 @@ function Login() {
           </label>
 
           <button
-            type="submit"
-            className={styles.signupButton}
-          >
-            Login
-          </button>
+  type="submit"
+  className={styles.signupButton}
+>
+  Login
+</button>
         </form>
 
         <div className={styles.divider}>
