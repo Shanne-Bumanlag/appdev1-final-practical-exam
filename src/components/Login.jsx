@@ -3,6 +3,7 @@ import styles from './Login.module.css';
 import blossomFlower from '../assets/blossom-flower.svg';
 import googleLogo from '../assets/icons-google-logo.svg';
 import appleLogo from '../assets/icons-apple-logo.svg';
+import { Input } from '@/components/ui/input';
 
 function Login() {
   return (
@@ -16,7 +17,7 @@ function Login() {
         <form className={styles.form}>
           <div className={styles.inputGroup}>
             <label htmlFor="email">Email address</label>
-            <input
+            <Input
               id="email"
               type="email"
               placeholder="Enter your email"
@@ -28,7 +29,7 @@ function Login() {
               <label htmlFor="password">Password</label>
               <a href="#">Forgot password?</a>
             </div>
-            <input
+            <Input
               id="password"
               type="password"
               placeholder="Enter your password"
@@ -40,12 +41,9 @@ function Login() {
             <span>Remember for 30 days</span>
           </label>
 
-          <button
-  type="submit"
-  className={styles.signupButton}
->
-  Login
-</button>
+          <button type="submit" className={styles.signupButton}>
+            Login
+          </button>
         </form>
 
         <div className={styles.divider}>
@@ -55,25 +53,19 @@ function Login() {
         </div>
 
         <div className={styles.socialButtons}>
-          <button
-            type="button"
-            className={styles.socialButton}
-          >
+          <button type="button" className={styles.socialButton}>
             <img src={googleLogo} alt="" />
             <span>Sign in with Google</span>
           </button>
 
-          <button
-            type="button"
-            className={styles.socialButton}
-          >
+          <button type="button" className={styles.socialButton}>
             <img src={appleLogo} alt="" />
             <span>Sign in with Apple</span>
           </button>
         </div>
 
-       <p className={styles.accountText}>
-  Don’t have an account? <a href="#">Sign Up</a>
+        <p className={styles.accountText}>
+          Don’t have an account? <a href="#">Sign Up</a>
         </p>
       </section>
 
