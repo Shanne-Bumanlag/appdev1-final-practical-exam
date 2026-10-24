@@ -1,3 +1,4 @@
+
 import styles from './Login.module.css';
 import blossomFlower from '../assets/blossom-flower.svg';
 import googleLogo from '../assets/icons-google-logo.svg';
@@ -8,20 +9,11 @@ function Login() {
     <main className={styles.page}>
       <section className={styles.leftSection}>
         <h1 className={styles.title}>Welcome back!</h1>
-<p className={styles.subtitle}>
-  Enter your Credentials to access your account
-</p>
+        <p className={styles.subtitle}>
+          Enter your Credentials to access your account
+        </p>
 
         <form className={styles.form}>
-          <div className={styles.inputGroup}>
-            <label htmlFor="name">Name</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Enter your name"
-            />
-          </div>
-
           <div className={styles.inputGroup}>
             <label htmlFor="email">Email address</label>
             <input
@@ -32,7 +24,10 @@ function Login() {
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="password">Password</label>
+            <div className={styles.passwordLabel}>
+              <label htmlFor="password">Password</label>
+              <a href="#">Forgot password?</a>
+            </div>
             <input
               id="password"
               type="password"
@@ -42,14 +37,14 @@ function Login() {
 
           <label className={styles.checkboxGroup}>
             <input type="checkbox" />
-            <span>I agree to the terms &amp; policy</span>
+            <span>Remember for 30 days</span>
           </label>
 
           <button
             type="submit"
             className={styles.signupButton}
           >
-            Signup
+            Login
           </button>
         </form>
 
