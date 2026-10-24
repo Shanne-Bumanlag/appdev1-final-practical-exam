@@ -1,5 +1,5 @@
 
-import Signup from './components/Signup';
+import Signup from './components/Signup.jsx';
 
 function App() {
   return <Signup />;
